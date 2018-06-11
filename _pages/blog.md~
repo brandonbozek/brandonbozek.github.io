@@ -1,9 +1,9 @@
 ---
-title:  "About"
+title:  "Blog"
 layout: archive
-permalink: /about/
+permalink: /Blog/
 author_profile: true
 comments: true
 ---
 
-This is my author page.
+This is my blog page.
