@@ -32,7 +32,7 @@ The dataset is organized by state and year for the following features:
 - the total amount of honey in pounds produced in that state for the year, which is the product of the previous two features;
 - the amount of honey in pounds that is held in reserve by producers and not sold that year;
 - the price per pound of honey in dollars; and
-- the value of the total amount honey produced in dollars, which is a product of honey production and price; 
+- the value of the total amount honey produced in dollars, which is a product of honey production and price.
 
 
 # Goals
