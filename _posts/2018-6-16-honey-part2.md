@@ -71,11 +71,11 @@ which only produced honey from 1998-2003. I'll explore this further, later on in
 this post. 
 
 In order to more easily examine the relative production of honey by each state and
-identify the largest producers, I made two interactive bar plots using the plotly
+identify the largest producers, I made two interactive bar plots using the Plotly
 package. To do this, I created a pivot table of each state's total production per
 year in order to make the sorting of the data a little simpler when constructing
 these bar plots. The interested reader can refer to the code to see how that was
-done. Useful tip for exploring plotly bar charts: double-clicking a year in the
+done. Useful tip for exploring Plotly bar charts: double-clicking a year in the
 legend will remove the graphs from all other years.  
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
