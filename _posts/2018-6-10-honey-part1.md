@@ -5,7 +5,7 @@ date:   2018-6-10
 ---
 
 I have been interested in the plight of honey bees since first learning about Colony
-Collapse Disorder, the term given to the mysterious cause of bees dissapearing
+Collapse Disorder, the term given to the mysterious cause of bees disappearing
 from colonies en masse leading to the colony's demise. Given the importance of bees
 to the pollination of many major US crops (canola, almonds, oranges, and more) any
 threat to the health of bees is a reason for concern, but the unknown cause of Colony
@@ -27,12 +27,12 @@ including details about this dataset and supplemental information I am not
 considering in this project, can be found [here.](http://www.beeculture.com/u-s-honey-industry-report-2016/) 
 
 The dataset is organized by state and year for the following features: 
-- the number of colonies that produced honey 
-- the yield of honey per colony in pounds
-- the total amount of honey in pounds produced in that state for the year, which is the product of the previous two features
-- the amount of honey in pounds that is held in reserve by producers and not sold that year 
-- the price per pound of honey in dollars
-- the value of the total amount honey produced in dollars, which is a product of honey production and price. 
+- the number of colonies that produced honey;
+- the yield of honey per colony in pounds;
+- the total amount of honey in pounds produced in that state for the year, which is the product of the previous two features;
+- the amount of honey in pounds that is held in reserve by producers and not sold that year;
+- the price per pound of honey in dollars; and
+- the value of the total amount honey produced in dollars, which is a product of honey production and price; 
 
 
 # Goals
@@ -44,9 +44,9 @@ and price of honey? Which states produce the most honey and how has that product
 changed? Further, are there any other trends noticeable in the data that are relevant
 for understanding how honey is produced and how the price is set? (Spoiler: yes, there are!)
 
-The code I used to produce the figures and the analyze this dataset can be found
+The code I used to produce the figures and analyze this dataset can be found
 [here](https://github.com/brandonbozek/blog_code). In the python notebook related to this blog
-entry I include additional details on how I stepped through the analysis of this
+entry, I include additional details on how I stepped through the analysis of this
 project that I exclude here for brevity. 
 
 # Analysis
@@ -78,10 +78,10 @@ price of honey in the features that describe the supply of honey.
 {% include figure image_path="/assets/images/HoneyProd_boxplot.png" alt="this is a
 placeholder image" caption="The distribution of the production of honey in reporting states from 19928-2012." %}
 
-The distribution of honey production appars to remain roughly constant in 1998-2012.
+The distribution of honey production appears to remain roughly constant in 1998-2012.
 However, this boxplot is hiding the importance of the few outliers states that appear
 to dominate domestic honey production. In order to get a clear understanding of what is
-driving the trends in the price I need to consider the total production of honey in
+driving the trends in the price, I need to consider the total production of honey in
 the US. To do this, I need to create a new dataframe which aggregates the
 features into national totals (or mean values) for each year: the total production of
 honey in the US, the total number of colonies that produced honey, the mean yield of
@@ -89,7 +89,7 @@ honey per colony in that year, and the mean price per pound.
 
 After some experimentation with different combinations of features in the dataset, I
 found the best predictor for price each year is the sum of that year's honey
-prodution with the stocks from the previous year, which I am refering to as the
+prodution with the stocks from the previous year, which I am referring to as the
 Market Size of US honey. This represents that amount of domestic honey that is
 available for purchase in any given year. The total market
 size for honey would include imported honey, which is not being considered for this
@@ -106,7 +106,7 @@ the domestic market size of honey which is shown in the top right panel. The lin
 relationship between market size and price is shown in the bottom left panel where
 the strong statistical significance of the linear fit is annotated on the plot. The
 Pearson correlation coefficient ("pearsonr" in the plot) of the two features is close
-to -1 indicating the the mean price of honey and the domestic market size each year
+to -1 indicating the mean price of honey and the domestic market size each year
 are nearly linearly related. Further, the p-value of the linear relationship between
 the two is far less than 0.05, which shows a strong significance for the rejection of
 the null hypothesis that they are not linearly related. The correlation between
@@ -121,7 +121,7 @@ of these two features are very similar.
 It is worth noting that the linear fit to the price of honey over time does a poor
 job describing changes in the price on small timescales. I illustrate that further in the
 plot below where, despite a small number of points, there are clear variations in the
-price with respect to the linear regression. As disucssed above, the changes in the price of honey
+price with respect to the linear regression. As discussed above, the changes in the price of honey
 can be broken into three periods: a linear increase from 2005-2012 due to a linear
 decrease in market size likely triggered by the colony collapse disorder, a roughly constant
 price from 1999-2001 when the market size was also roughly constant, and a temporary
@@ -152,10 +152,10 @@ amount in stocks. The combined effect of all three features descreasing with tim
 shows why the US honey market size has decreased over the time period we conisder.
 
 The number of honey producing colonies was slowly declining from 1998-2004. They
-precipitous drop in 2005-2008 shows how the colony collapse disorder impacted the
+precipitous drop in 2005-2008 shows how the Colony Collapse Disorder impacted the
 honey industry. Subsequent years show a possible rebound. The mean yield has
 continued to drop though. The cause for that is not clear from this dataset. I also
-do not see what is caused the dip in the market size from 2002-2004. In order to
+do not see what caused the dip in the market size from 2002-2004. In order to
 understand what is driving the national trends in these two features, I need to
 consider the original dataset and look into the individual states more closely.
 
