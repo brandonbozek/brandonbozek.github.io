@@ -1,9 +1,13 @@
 ---
 title:  "Blog"
 layout: archive
-permalink: /Blog/
+permalink: /blog/
 author_profile: true
 comments: true
 ---
+A collection of data-driven projects.
 
-This is my blog page.
+{% for post in site.posts %}
+   {% include archive-singe.html %}
+{% endfor %}
+
