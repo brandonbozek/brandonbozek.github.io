@@ -6,31 +6,31 @@ gallery:
   - url: /assets/images/MarketSize_Top6States.png
     image_path: /assets/images/MarketSize_Top6States.png
     alt: "placeholder image 1"
-    title: "Market size of honey in the top 6 producing states for 1999-2012"
+    title: "Market size of honey in the top six producing states for 1999-2012"
   - url: /assets/images/MarketSize_Top6States_Total_Trim.png
     image_path: /assets/images/MarketSize_Top6States_Total_Trim.png
     alt: "placeholder image 2"
-    title: "Total market size of honey in the top 6 producing states for 1999-2012"
+    title: "Total market size of honey in the top six producing states for 1999-2012"
 
 gallery2:
   - url: /assets/images/NumCol_Top6States.png
     image_path: /assets/images/NumCol_Top6States.png
     alt: "placeholder image 1"
-    title: "Number of colonies in the top 6 producing states for 1999-2012"
+    title: "Number of colonies in the top six producing states for 1999-2012"
   - url: /assets/images/Yield_Top6States.png
     image_path: /assets/images/Yield_Top6States.png
     alt: "placeholder image 2"
-    title: "Mean honey yield per colony in the top 6 producing states for 1999-2012" 
+    title: "Mean honey yield per colony in the top six producing states for 1999-2012" 
 
 gallery3:
   - url: /assets/images/NumCol_Top6States_Total.png
     image_path: /assets/images/NumCol_Top6States_Total.png
     alt: "placeholder image 1"
-    title: "Total Number of Colonies in the top 6 producing states for 1999-2012"
+    title: "Total Number of Colonies in the top six producing states for 1999-2012"
   - url: /assets/images/Yield_Top6States_Total.png
     image_path: /assets/images/Yield_Top6States_Total.png
     alt: "placeholder image 2"
-    title: "Mean honey yield per colony of the top 6 producing states for 1999-2012" 
+    title: "Mean honey yield per colony of the top six producing states for 1999-2012" 
 
 ---
 
@@ -47,12 +47,12 @@ production year-by-year, we need to look at individual states more carefully. Th
 python notebook for Part 2 that produced the plots in this entry can be found [here.](https://github.com/brandonbozek/blog_code)
 
 
-The first thing to do is make a geographical plot of US honey production to
-visualize each state's yearly honey production. I used plotly, an interactive
-plotting package, to add a slider bar at the bottom of the map allowing the user to
-compare the honey production in different years. There are other interactive
-features, e.g. moving the cursor over a state in the map shows that states's
-production for the year.
+  The first thing to do is make a geographical plot of US honey production to
+visualize each state's yearly production. I used Plotly, a python graphing library
+for making interactive plots, to construct an interactive map with a slider bar that
+allows the user to compare the honey production of different years. There are other
+interactive features, for example moving the cursor over a state in the map shows that
+states's production for the year.
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="82570226-57bd-460b-aaa1-da40427f77e7" style="height: 100%; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("82570226-57bd-460b-aaa1-da40427f77e7", [{"name": 1998, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": true, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [1136000.0, 3300000.0, 3445000.0, 37350000.0, 1944000.0, 22540000.0, 4200000.0, 944000.0, 6000000.0, 639000.0, 828000.0, 3900000.0, 736000.0, 150000.0, 4551000.0, 260000.0, 308000.0, 6800000.0, 11060000.0, 1548000.0, 1518000.0, 14030000.0, 4480000.0, 460000.0, 539000.0, 770000.0, 5200000.0, 472000.0, 29440000.0, 1404000.0, 204000.0, 2250000.0, 1716000.0, 21375000.0, 448000.0, 7007000.0, 1740000.0, 384000.0, 296000.0, 2958000.0, 330000.0, 8099000.0, 2760000.0], "locationmode": "USA-states"}, {"name": 1999, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [1156000.0, 3224000.0, 4628000.0, 27900000.0, 2052000.0, 23256000.0, 3315000.0, 640000.0, 5760000.0, 594000.0, 810000.0, 2600000.0, 871000.0, 150000.0, 5472000.0, 308000.0, 276000.0, 6205000.0, 11890000.0, 1314000.0, 1560000.0, 8540000.0, 4466000.0, 405000.0, 440000.0, 780000.0, 4830000.0, 414000.0, 26775000.0, 1480000.0, 270000.0, 2565000.0, 1680000.0, 23296000.0, 408000.0, 8748000.0, 1170000.0, 396000.0, 245000.0, 2600000.0, 234000.0, 6000000.0, 2664000.0], "locationmode": "USA-states"}, {"name": 2000, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [1248000.0, 2360000.0, 4836000.0, 30800000.0, 1740000.0, 24360000.0, 3135000.0, 784000.0, 4700000.0, 488000.0, 520000.0, 2010000.0, 1020000.0, 192000.0, 4042000.0, 231000.0, 276000.0, 5400000.0, 13500000.0, 1224000.0, 1725000.0, 10912000.0, 4350000.0, 350000.0, 385000.0, 960000.0, 4640000.0, 539000.0, 34500000.0, 1170000.0, 245000.0, 2448000.0, 1125000.0, 28435000.0, 549000.0, 8295000.0, 984000.0, 413000.0, 294000.0, 2808000.0, 378000.0, 7560000.0, 3627000.0], "locationmode": "USA-states"}, {"name": 2001, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [1022000.0, 2537000.0, 4900000.0, 28060000.0, 1430000.0, 22000000.0, 3135000.0, 696000.0, 4600000.0, 456000.0, 532000.0, 1683000.0, 663000.0, 312000.0, 4770000.0, 220000.0, 184000.0, 4560000.0, 10935000.0, 1122000.0, 1342000.0, 13872000.0, 2064000.0, 450000.0, 374000.0, 700000.0, 3710000.0, 572000.0, 26880000.0, 1458000.0, 188000.0, 1936000.0, 1482000.0, 280000.0, 15275000.0, 472000.0, 7663000.0, 874000.0, 567000.0, 468000.0, 2496000.0, 455000.0, 5427000.0, 2926000.0], "locationmode": "USA-states"}, {"name": 2002, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [1032000.0, 2394000.0, 3960000.0, 23500000.0, 1440000.0, 20460000.0, 2600000.0, 952000.0, 5700000.0, 720000.0, 496000.0, 2310000.0, 884000.0, 270000.0, 4340000.0, 451000.0, 138000.0, 5544000.0, 8541000.0, 1404000.0, 900000.0, 8442000.0, 3225000.0, 558000.0, 440000.0, 484000.0, 5880000.0, 672000.0, 24000000.0, 1260000.0, 159000.0, 2107000.0, 1653000.0, 470000.0, 11475000.0, 488000.0, 7638000.0, 1298000.0, 623000.0, 304000.0, 2550000.0, 459000.0, 6650000.0, 2394000.0], "locationmode": "USA-states"}, {"name": 2003, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [1066000.0, 2520000.0, 3000000.0, 32160000.0, 2064000.0, 14910000.0, 3380000.0, 798000.0, 4600000.0, 420000.0, 280000.0, 1888000.0, 912000.0, 240000.0, 3060000.0, 264000.0, 84000.0, 4810000.0, 9960000.0, 1449000.0, 901000.0, 9570000.0, 3330000.0, 384000.0, 190000.0, 246000.0, 4824000.0, 440000.0, 29580000.0, 750000.0, 141000.0, 2142000.0, 1350000.0, 280000.0, 15050000.0, 240000.0, 9380000.0, 1425000.0, 581000.0, 222000.0, 3248000.0, 376000.0, 5698000.0, 3159000.0], "locationmode": "USA-states"}, {"name": 2004, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [1044000.0, 1760000.0, 2280000.0, 17550000.0, 1840000.0, 20090000.0, 3087000.0, 768000.0, 6300000.0, 385000.0, 413000.0, 2345000.0, 1120000.0, 280000.0, 3430000.0, 217000.0, 4355000.0, 10125000.0, 1170000.0, 656000.0, 10780000.0, 4539000.0, 770000.0, 324000.0, 352000.0, 4288000.0, 360000.0, 30420000.0, 928000.0, 2268000.0, 1620000.0, 22575000.0, 324000.0, 8816000.0, 1680000.0, 408000.0, 266000.0, 3528000.0, 495000.0, 5848000.0, 2925000.0], "locationmode": "USA-states"}, {"name": 2005, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [858000.0, 1800000.0, 2484000.0, 30000000.0, 1960000.0, 13760000.0, 2891000.0, 1179000.0, 3515000.0, 680000.0, 512000.0, 2464000.0, 800000.0, 250000.0, 3395000.0, 208000.0, 4420000.0, 8880000.0, 1280000.0, 750000.0, 8710000.0, 2720000.0, 552000.0, 384000.0, 343000.0, 4307000.0, 540000.0, 33670000.0, 1035000.0, 1638000.0, 1568000.0, 17380000.0, 385000.0, 5964000.0, 1080000.0, 546000.0, 296000.0, 2805000.0, 408000.0, 5312000.0, 2240000.0], "locationmode": "USA-states"}, {"name": 2006, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [792000.0, 1950000.0, 2432000.0, 19760000.0, 2700000.0, 13770000.0, 4662000.0, 930000.0, 4180000.0, 660000.0, 378000.0, 2184000.0, 770000.0, 280000.0, 2700000.0, 253000.0, 3960000.0, 10000000.0, 1372000.0, 690000.0, 10428000.0, 3431000.0, 333000.0, 324000.0, 336000.0, 3712000.0, 500000.0, 25900000.0, 784000.0, 2208000.0, 1120000.0, 10575000.0, 385000.0, 5740000.0, 1300000.0, 336000.0, 336000.0, 2548000.0, 252000.0, 5952000.0, 3315000.0], "locationmode": "USA-states"}, {"name": 2007, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [616000.0, 1920000.0, 2240000.0, 13600000.0, 1581000.0, 11360000.0, 3480000.0, 920000.0, 3772000.0, 567000.0, 424000.0, 2106000.0, 560000.0, 244000.0, 2581000.0, 234000.0, 4608000.0, 8840000.0, 1380000.0, 644000.0, 9180000.0, 2205000.0, 280000.0, 513000.0, 354000.0, 3021000.0, 540000.0, 31080000.0, 854000.0, 1978000.0, 1050000.0, 13260000.0, 455000.0, 8610000.0, 1176000.0, 320000.0, 276000.0, 2024000.0, 288000.0, 5040000.0, 3440000.0], "locationmode": "USA-states"}, {"name": 2008, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "NC", "ND", "OH", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [594000.0, 1600000.0, 2100000.0, 18360000.0, 1215000.0, 11850000.0, 4615000.0, 900000.0, 3600000.0, 448000.0, 469000.0, 1488000.0, 610000.0, 156000.0, 3080000.0, 294000.0, 5183000.0, 9516000.0, 1372000.0, 583000.0, 9380000.0, 2412000.0, 290000.0, 360000.0, 288000.0, 3500000.0, 624000.0, 36000000.0, 742000.0, 2150000.0, 1104000.0, 21375000.0, 427000.0, 4928000.0, 1344000.0, 330000.0, 252000.0, 2156000.0, 258000.0, 4640000.0, 2379000.0], "locationmode": "USA-states"}, {"name": 2009, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MI", "MN", "MS", "MO", "MT", "NE", "NJ", "NM", "NY", "NC", "ND", "OH", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [450000.0, 1040000.0, 1368000.0, 11715000.0, 1484000.0, 11560000.0, 2665000.0, 950000.0, 4738000.0, 272000.0, 288000.0, 1092000.0, 567000.0, 175000.0, 3811000.0, 300000.0, 3960000.0, 7930000.0, 1456000.0, 517000.0, 10220000.0, 2688000.0, 352000.0, 420000.0, 2925000.0, 495000.0, 34650000.0, 550000.0, 1870000.0, 840000.0, 17820000.0, 357000.0, 5607000.0, 988000.0, 245000.0, 234000.0, 2728000.0, 185000.0, 3780000.0, 1776000.0], "locationmode": "USA-states"}, {"name": 2010, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MI", "MN", "MS", "MO", "MT", "NE", "NJ", "NM", "NY", "NC", "ND", "OH", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [486000.0, 1848000.0, 1500000.0, 27470000.0, 1904000.0, 13800000.0, 2530000.0, 770000.0, 2619000.0, 369000.0, 430000.0, 1323000.0, 468000.0, 335000.0, 2880000.0, 205000.0, 4118000.0, 8448000.0, 1568000.0, 572000.0, 11618000.0, 2255000.0, 455000.0, 462000.0, 2880000.0, 598000.0, 46410000.0, 1116000.0, 2301000.0, 1110000.0, 15370000.0, 504000.0, 7200000.0, 780000.0, 260000.0, 185000.0, 2627000.0, 200000.0, 4096000.0, 1224000.0], "locationmode": "USA-states"}, {"name": 2011, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MI", "MN", "MS", "MO", "MT", "NE", "NJ", "NM", "NY", "NC", "ND", "OH", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [450000.0, 1219000.0, 1408000.0, 17760000.0, 1705000.0, 10980000.0, 2795000.0, 666000.0, 3132000.0, 350000.0, 408000.0, 1550000.0, 308000.0, 156000.0, 2772000.0, 120000.0, 4736000.0, 6360000.0, 2070000.0, 344000.0, 13340000.0, 2419000.0, 451000.0, 392000.0, 2744000.0, 868000.0, 32660000.0, 990000.0, 2040000.0, 1056000.0, 16500000.0, 308000.0, 4524000.0, 897000.0, 172000.0, 160000.0, 2698000.0, 212000.0, 3591000.0, 1890000.0], "locationmode": "USA-states"}, {"name": 2012, "colorscale": "YIOrRd", "type": "choropleth", "locations": ["AL", "AZ", "AR", "CA", "CO", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MI", "MN", "MS", "MO", "MT", "NE", "NJ", "NM", "NY", "NC", "ND", "OH", "OR", "PA", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "colorbar": {"title": "Honey Production in Pounds"}, "visible": false, "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "z": [432000.0, 1012000.0, 1575000.0, 11550000.0, 1200000.0, 12352000.0, 3009000.0, 750000.0, 2944000.0, 427000.0, 472000.0, 2257000.0, 330000.0, 255000.0, 3526000.0, 136000.0, 4161000.0, 8375000.0, 2124000.0, 371000.0, 7540000.0, 2795000.0, 462000.0, 260000.0, 2601000.0, 507000.0, 33120000.0, 1080000.0, 1920000.0, 960000.0, 16380000.0, 366000.0, 4784000.0, 950000.0, 240000.0, 164000.0, 2542000.0, 288000.0, 4140000.0, 2550000.0], "locationmode": "USA-states"}], {"sliders": [{"active": 10, "pad": {"t": 0}, "currentvalue": {"prefix": "Year: "}, "steps": [{"args": ["visible", [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false]], "method": "restyle", "label": 1998}, {"args": ["visible", [false, true, false, false, false, false, false, false, false, false, false, false, false, false, false]], "method": "restyle", "label": 1999}, {"args": ["visible", [false, false, true, false, false, false, false, false, false, false, false, false, false, false, false]], "method": "restyle", "label": 2000}, {"args": ["visible", [false, false, false, true, false, false, false, false, false, false, false, false, false, false, false]], "method": "restyle", "label": 2001}, {"args": ["visible", [false, false, false, false, true, false, false, false, false, false, false, false, false, false, false]], "method": "restyle", "label": 2002}, {"args": ["visible", [false, false, false, false, false, true, false, false, false, false, false, false, false, false, false]], "method": "restyle", "label": 2003}, {"args": ["visible", [false, false, false, false, false, false, true, false, false, false, false, false, false, false, false]], "method": "restyle", "label": 2004}, {"args": ["visible", [false, false, false, false, false, false, false, true, false, false, false, false, false, false, false]], "method": "restyle", "label": 2005}, {"args": ["visible", [false, false, false, false, false, false, false, false, true, false, false, false, false, false, false]], "method": "restyle", "label": 2006}, {"args": ["visible", [false, false, false, false, false, false, false, false, false, true, false, false, false, false, false]], "method": "restyle", "label": 2007}, {"args": ["visible", [false, false, false, false, false, false, false, false, false, false, true, false, false, false, false]], "method": "restyle", "label": 2008}, {"args": ["visible", [false, false, false, false, false, false, false, false, false, false, false, true, false, false, false]], "method": "restyle", "label": 2009}, {"args": ["visible", [false, false, false, false, false, false, false, false, false, false, false, false, true, false, false]], "method": "restyle", "label": 2010}, {"args": ["visible", [false, false, false, false, false, false, false, false, false, false, false, false, false, true, false]], "method": "restyle", "label": 2011}, {"args": ["visible", [false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]], "method": "restyle", "label": 2012}]}], "geo": {"showlakes": true, "scope": "usa", "lakecolor": "rgb(85,173,240)"}, "title": "Honey Production (per year)"}, {"linkText": "Export to plot.ly", "showLink": true})</script>
@@ -61,13 +61,14 @@ production for the year.
 
   The plot above shows that a handful of the same states are far outpacing the rest
 of the country in terms of production. There are several states that are not
-included in the dataset, eg. Alaska, because those states do not disclose data for
+included in the dataset, like Alaska, because those states do not disclose data for
 individual operations. The honey production of these states is lumped together in
 the annual Department Of Agriculture’s National Agricultural Statistics Service
 Annual Honey Report, but the total is small and can be safely ignored for this
 analysis as it will not impact any of the final conclusions. One other thing to
-note: several states only produce honey for a portion of the full time period, like
-Oklahoma from 199-2003. I'll explore this further, later on in this post. 
+note: several states only produce honey for a portion of the time, such as Oklahoma
+which only produced honey from 1998-2003. I'll explore this further, later on in
+this post. 
 
 In order to more easily examine the relative production of honey by each state and
 identify the largest producers, I made two interactive bar plots using the plotly
@@ -82,18 +83,18 @@ legend will remove the graphs from all other years.
 
 <br />
 
-By toggling the plot above to only show the years 1998 and 2012, it is easy to
+  By toggling the plot above to only show the years 1998 and 2012, it is easy to
 identify which states are responsible for the majority of honey produced each year.
-While the individual rankings vary, each year the top 6 states are the same: CA, ND,
-SD, FL, MT, and MN. These 6 states make-up 55-70% of US honey production each year.
-The bar plot below clearly illustrates that point most easily if only those 6 states are
-toggled on. However, the interactive plot allows for further exploration for the
+While the individual rankings vary, each year the top six states are the same: California,
+North Dakota, South Dakota, Florida, Montana, and Minnesota. These six states make-up 55-70% of US honey production each
+year. The following bar plot clearly illustrates that point if only those six states
+are shown by toggling the states below MN off. However, the interactive plot allows for further exploration for the
 interested reader.
 
 I was curious as to why honey production is so concentrated in so few places in the country. After a
-small search, I found that these six states are all states that have major crops that
+small search, I found that these six states have major crops that
 require pollination by bees each season. In some cases bees are transported from
-one state to another after and pollinate crops in multiple states. 
+one state to another and pollinate crops in multiple states. 
 
 <br />
 
@@ -102,23 +103,22 @@ one state to another after and pollinate crops in multiple states.
 
 <br />
 
-Now that I know that US honey production is dominated by 6 states each year, I can
+Now that I know that US honey production is dominated by six states each year, I can
 examine how the production in those states change over time and how that compares with
 the states that produce the least honey. First I consider the market size of the top producing states. 
 
-{% include gallery caption="Left: Market size of honey in the top 6 producing states for 1999-2012, Right: Combined market size of those 6 states for same time period." %}
+{% include gallery caption="Left: Market size of honey in the top six producing states for 1999-2012, Right: Combined market size of those six states for same time period." %}
 
 This is a little alarming! The market size of the top producing states are all in
 decline with the exception of North Dakota. The increase in the market size of North
 Dakota is not enough to overcome the decrease in the other 5 states as the total
-market size of these 6 states is decreasing. Since these states make up the majority
+market size of these six states is decreasing. Since these states make up the majority
 of US honey production, the decline in the honey supply of these states is driving
-the domestic decline. The US imports most of the honey it consumes and this figure
-makes it appear that is to continue. 
+the domestic decline. 
 
 The next figure shows the factors driving the changes in these state's market size.
 
-{% include gallery id="gallery2" caption="Number of colonies (left panel) and mean yield of honey per colony (right panel) in the top 6 producing states for 1999-2012" %}
+{% include gallery id="gallery2" caption="Number of colonies (left panel) and mean yield of honey per colony (right panel) in the top six producing states for 1999-2012" %}
 
 North Dakota, South Dakota, and Montana all show an increase in the number of
 colonies from 1998-2012, while simultaneously showing a decrease in yield of honey
@@ -133,16 +133,16 @@ The assumption I am making about honey production and crop pollination being
 directly coupled could also be incorrect. This is a topic that would be interesting
 to explore more in the future.
 
-{% include gallery id="gallery3" caption="Left: Total number of colonies in the top 6 producing states for 1999-2012, Right: the mean yield of honey per colony of those states for the same time period." %}
+{% include gallery id="gallery3" caption="Left: Total number of colonies in the top six producing states for 1999-2012, Right: the mean yield of honey per colony of those states for the same time period." %}
 
-These 6 states also contain the key to understanding the drop in US market
+These six states also contain the key to understanding the drop in US market
 size from 2002-2004. The total number of colonies in these states is actually increasing over most of this time period.
 However, the mean yield per colony in these states was
 anomalously low in 2002. Something clearly happened in those states in that year that
 lowered yield of honey produced per colony. Since there is nothing in our data set
 that can give the cause, a quick search (thanks to narrowing the scope of what I
 needed to look for) revealed the answer: there was a bad drought in Western United States
-beginning in 2002. Note a careful consideration of the yield from individual states
+beginning in 2002. Note: a careful consideration of the yield from individual states
 in the figure above shows that Florida is not strongly impacted relative to the
 other states in 2002. 
 
@@ -165,7 +165,7 @@ Lastly, I want to take a quick look at the states that produce the least honey i
 total from 1998-2012: Kentucky, Maine, Maryland, Oklahoma, Virginia, and South
 Carolina.
 
-{% include figure image_path="/assets/images/MarketSize_BottomStates.png" alt="this is a placeholder image" caption="The market size for the 6 states that produce the least amount of total honey from 1999-2012." %}
+{% include figure image_path="/assets/images/MarketSize_BottomStates.png" alt="this is a placeholder image" caption="The market size for the six states that produce the least amount of total honey from 1999-2012." %}
 
   These states have either always produced a small amount or have ceased to do so
 after a steady decline. This does make me wonder about what is happening with crops

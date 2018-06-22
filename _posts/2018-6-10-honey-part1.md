@@ -57,7 +57,7 @@ derived. Since I am interested in the dataset features that relate to the price 
 first wanted to look for trends in the price of honey over time. 
 
 {% include figure image_path="/assets/images/PriceYear_boxplot.png" alt="this is a placeholder image"
-caption="The distribution of the price of honey in all reporting states from 19928-2012." %}
+caption="The distribution of the price of honey in all reporting states from 1998-2012." %}
 
 The plot above shows the distribution of the price per pound of honey in reporting states from 1998-2012. The median price and
 price distribution are both fairly constant from 1998 to 2001, establishing a
@@ -101,7 +101,7 @@ from 1997.
 image" caption="The US Honey Supply (Market Size and Total Production) and Price from 1999-2012." %}
 
 The mean price of honey in the US is steadily rising from 1998-2012 as shown in the
-top left panel in the figure above. This is related to the continuous descrease in
+top left panel in the figure above. This is related to the continuous decrease in
 the domestic market size of honey which is shown in the top right panel. The linear
 relationship between market size and price is shown in the bottom left panel where
 the strong statistical significance of the linear fit is annotated on the plot. The
@@ -144,11 +144,11 @@ panel), the US average yield of honey per colony (middle planel), and the total
 amount of honey in US reserves." %}
 
 Overall the average yield per colony and the total number of honey producing colonies in the United States
-are both descreasing with time. Since the total domestic production is the product of these
+are both decreasing with time. Since the total domestic production is the product of these
 two features, both are responsible for the decrease in US honey production. The
 amount of honey held in reserve each year is approximately 20-40% of what is
 produced, therefore as the domestic production of honey has decreased, so has the
-amount in stocks. The combined effect of all three features descreasing with time
+amount in stocks. The combined effect of all three features decreasing with time
 shows why the US honey market size has decreased over the time period we conisder.
 
 The number of honey producing colonies was slowly declining from 1998-2004. They
