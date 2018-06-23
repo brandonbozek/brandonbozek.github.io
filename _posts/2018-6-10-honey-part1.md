@@ -14,9 +14,7 @@ Collapse Disorder makes the problem all the more darkly interesting.
 For this reason I was drawn to this dataset, the annual production of honey in the
 US, when I was searching for a project for this first blog entry. I was curious to
 see what can be learned about bees and their species health through the honey they
-produce. As a result, I dug a little deeper into it this dataset than I had
-originally intended. Therefore, this is part one of a to-be-determined number of
-posts on US honey production.
+produce. 
 
 # About the data set
 This project focuses on the production and price of US honey from 1998-2012. The
