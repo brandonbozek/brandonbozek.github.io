@@ -6,6 +6,8 @@ main:
     url: /about/ #https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Blog"
     url: /blog/
+  - title: "Resume"
+    url: /resume/BrandonBozek_Resume.pdf
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
